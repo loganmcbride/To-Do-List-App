@@ -9,12 +9,12 @@ class List extends React.Component {
   render() {
     return (
       <div>
-      {this.props.items.map((item, i) => {
-        <ListItem item={item} key={i} />
-      })}
+        {this.props.items.map((item, i) => {
+          return (
+            <ListItem item={item} key={i} />  
+          )
+        })}
       </div>
-
-
     )
   }
 }

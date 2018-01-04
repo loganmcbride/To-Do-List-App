@@ -2,9 +2,11 @@ var path = require('path');
 var express = require('express');
 var fs = require('fs');
 var indexRoutes = require('./routes/index.js')
-// var body-parser = require('body-parser');
+var bodyParser = require('body-parser');
 
 var app = express();
+
+app.use(bodyParser.json());
 
 app.set('view engine', 'html');
 app.engine('html', function(path, options, callbacks){

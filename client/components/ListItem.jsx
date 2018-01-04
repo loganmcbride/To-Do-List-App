@@ -8,12 +8,8 @@ class ListItem extends React.Component {
   render(){
     return (
       <p>{this.props.item}</p>
-
-
     )
-
   }
-
 }
 
 module.exports = ListItem;
